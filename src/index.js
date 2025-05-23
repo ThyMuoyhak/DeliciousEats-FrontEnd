@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { init } from '@emailjs/browser';
+init("template_89zp32b"); // Your public key / user ID
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
