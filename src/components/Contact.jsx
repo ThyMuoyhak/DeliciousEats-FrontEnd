@@ -28,16 +28,16 @@ const Contact = () => {
         try {
             // Using the provided EmailJS template and service IDs
             const result = await emailjs.send(
-                'service_089643959',        // Your service ID
-                'template_89zp32b',         // Your template ID
+                '',        // Your service ID
+                '',         // Your template ID
                 {
                     from_name: formData.name,
                     from_email: formData.email,
                     subject: formData.subject || 'Contact Form Submission',
                     message: formData.message,
-                    to_email: 'thymuoyhak.biu@gmail.com'
+                    to_email: 'example@gmail.com'
                 },
-                'template_89zp32b'          // Your public key / user ID
+                ''          // Your public key / user ID
             );
             
             if (result.text === 'OK') {
@@ -207,7 +207,7 @@ const Contact = () => {
                             </div>
                             <div className="info-content">
                                 <h4 className="info-title">Location</h4>
-                                <p className="info-text">Cyber District, Level 42</p>
+                                <p className="info-text">Eats District, Level 42</p>
                                 <p className="info-text">Phnom Penh, Cambodia</p>
                             </div>
                         </div>
